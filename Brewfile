@@ -43,6 +43,7 @@ install node
 #install tree
 install webkit2png
 #install zopfli
+install highlight
 
 #tap homebrew/versions
 #install lua52
