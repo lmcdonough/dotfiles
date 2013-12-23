@@ -311,3 +311,15 @@ function np() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX
 }
+
+# Copy file content with syntax highlighting as RTF to the clipboard
+# Using Highlight: http://www.andre-simon.de/doku/highlight/en/highlight.php
+function high() {
+	if [ $# -eq 0 ]; then
+		echo "Function needs a file."
+	else
+		highlight -O rtf "$@" --font-size 24 --font Source\ Code\ Pro | pbcopy && echo "Copied to clipboard"
+	fi
+}
+
+
