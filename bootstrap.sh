@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 cd "$(dirname "${BASH_SOURCE}")"
-git pull origin master
+git pull origin my-custom-dotfiles
 function doIt() {
 	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
 		--exclude "README.md" --exclude "LICENSE-MIT.txt" -av --no-perms . ~
