@@ -10,7 +10,7 @@ upgrade
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 #install findutils
 # Install Bash 4
-#install bash
+install bash
 
 # Install wget with IRI support
 install wget --enable-iri
