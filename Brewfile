@@ -45,6 +45,7 @@ install webkit2png
 #install zopfli
 install highlight
 install z
+install bash-completion
 
 #tap homebrew/versions
 #install lua52
