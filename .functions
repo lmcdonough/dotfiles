@@ -322,12 +322,4 @@ function high() {
 	fi
 }
 
-# `f` with no arguments opens the current directory in the Finder, otherwise
-# opens the given location
-function f() {
-	if [ $# -eq 0 ]; then
-		open .
-	else
-		open "$@"
-	fi
-}
+
