@@ -322,4 +322,12 @@ function high() {
 	fi
 }
 
-
+# Deploys Liferay Portlets by building the portlet and copying the .war file to the deploy directory.
+function dp() {
+	if [ $# -eq 0 ]; then
+		cd .
+	else
+		cd "$@"
+	fi
+	mvn package -DskipTests && cp target/*.war $LIFERAY_HOME/deploy/ && cd - > /dev/null
+}
