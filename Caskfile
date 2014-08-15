@@ -22,3 +22,7 @@ cask install transmission 2> /dev/null
 cask install ukelele 2> /dev/null
 cask install virtualbox 2> /dev/null
 cask install vlc 2> /dev/null
+
+# Install useful Quick Look plugins for developers
+# See https://github.com/sindresorhus/quick-look-plugins
+cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package 2> /dev/null
