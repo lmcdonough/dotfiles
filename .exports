@@ -23,3 +23,6 @@ export GREP_OPTIONS="--color=auto";
 
 # Link Homebrew casks in `/Applications` rather than `~/Applications`
 export HOMEBREW_CASK_OPTS="--appdir=/Applications";
+
+# Liferay server
+export LIFERAY_HOME="/Users/mkuehnel/Runtimes/liferay-portal-6.1_20_EE"
