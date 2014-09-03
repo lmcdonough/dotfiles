@@ -26,3 +26,8 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications";
 
 # Liferay server
 export LIFERAY_HOME="/Users/mkuehnel/Runtimes/liferay-portal-6.1_20_EE"
+
+# Java Home
+#export JAVA_HOME=`/usr/libexec/java_home -v '1.6*'`
+export JAVA_HOME=`/usr/libexec/java_home -v '1.7*'`
+#export JAVA_HOME=`/usr/libexec/java_home -v '1.8*'`
