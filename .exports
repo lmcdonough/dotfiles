@@ -31,3 +31,6 @@ export LIFERAY_HOME="/Users/mkuehnel/Runtimes/liferay-portal-6.1_20_EE"
 #export JAVA_HOME=`/usr/libexec/java_home -v '1.6*'`
 export JAVA_HOME=`/usr/libexec/java_home -v '1.7*'`
 #export JAVA_HOME=`/usr/libexec/java_home -v '1.8*'`
+
+# Prefer Homebrew Git over Apples
+export PATH=/usr/local/bin:$PATH
