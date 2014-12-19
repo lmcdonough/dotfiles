@@ -264,3 +264,22 @@ function dp() {
 	fi
 	mvn package -DskipTests && cp target/*.war $LIFERAY_HOME/deploy/ && cd - > /dev/null
 }
+
+# Starts and stops local Jenkins
+function jenkins() {
+	if [ $# -eq 0 ]; then
+		echo "I need param '--start' or '--stop' to interact with jenkins =^.^="
+	else
+		if [ $@ == "--start" ]; then
+			sudo launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist
+			open -a 'Google Chrome.app' --args --ssl-version-min=tls1 &&
+			/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --new-tab "http://localhost:8080"
+			echo "Starting Jenkins. This may take a few seconds."
+		elif [ $@ == "--stop" ]; then
+			sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist
+			echo "Jenkins stopped."
+		else
+			echo "I need param '--start' or '--stop' to interact with jenkins =^.^="
+		fi;
+	fi;
+}
