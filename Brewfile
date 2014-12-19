@@ -60,6 +60,7 @@ install xpdf
 #install zopfli
 install z
 install highlight
+install chrome-cli
 
 #install homebrew/versions/lua52
 
