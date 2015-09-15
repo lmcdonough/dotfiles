@@ -61,6 +61,7 @@ install xpdf
 install z
 install highlight
 install chrome-cli
+install nvm
 
 #install homebrew/versions/lua52
 
